@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>选择符</title>
+	<style>
+				/* nth-of-type 选择符，nth-of-last-type元素选择符	*/
+			/*h3:nth-child(odd){			nth-child在计算奇偶时从第个元素开始计算起	
+				background: red;
+			}*/
+			h3:nth-of-type(odd){	/*	只针对h3进行奇偶选择，这样可以避免其它元素干扰*/
+				background: red;
+			}
+			h3:nth-of-type(even){
+			background: orange;
+			}
+	</style>
+</head>
+<body>
+		<h3>我好像在哪见过你</h3>
+		<p>土壤里</p>
+		<h3>我好像在哪见过你</h3>
+		<p>土壤里</p>
+		<h3>我好像在哪见过你</h3>
+		<p>土壤里</p>
+		<h3>我好像在哪见过你</h3>
+		<p>土壤里</p>
+		<h3>我好像在哪见过你</h3>
+		<p>土壤里</p>
+		<h3>我好像在哪见过你</h3>
+		<p>土壤里</p>
+</body>
+
+</html>

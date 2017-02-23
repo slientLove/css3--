@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>选择符</title>
+	<style>
+		:root{				/* 	选择页面根元素	*/
+				background: #ccf;
+		}				/*	伪类选择符	*/
+		body{				/*	当给body加上颜色选择时，只会呈现页面有内容的那部分	*/
+			background: yellow;
+		}
+		div *:not(span){			/*	通配选择符，选择div下面不是span元素的标签 	*/
+			background: red;
+		}
+		:empty{						/*	当元素为空时呈现颜色	*/
+			background: orange;
+		}
+		:target{					/*	通过目标跳转链接，可以知道用户点击哪个链接	*/
+			background: #000;
+		}
+	</style>
+</head>
+<body>
+		<h2 >通配选择符</h2>
+		<div>
+			<h3>统配选择符</h3>
+			<span>进行页面</span>
+			<h4>Adasgsa</h4>
+		</div>
+		<table>
+			<tr>
+				<td>元素</td>
+				<td>1213</td>
+				<td></td>
+				<td>2334</td>
+			</tr>
+			<tr>
+				<td>元素</td>
+				<td></td>
+				<td>23r234</td>
+				<td>2334</td>
+			</tr>
+		</table>
+
+		<a href="#a1">点击页面</a>
+		<a href="#a2">点击页面</a>
+		<a href="#a3">点击页面</a>
+		<a href="#a4">点击页面</a>
+		<div id="a1">
+			132233f33
+		</div>
+		<div id="a2">1223rwqfewqfw</div>
+		<div id="a3">1223rwqfewqfw</div>
+		<div id="a4">1223rwqfewqfw</div>
+</body>
+</html>

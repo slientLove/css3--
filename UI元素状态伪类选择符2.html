@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>选择符</title>
+	<style>
+		input[type="text"]:enable{
+			background: yellow;
+		}
+	</style>
+	<script>
+			function check(){
+				var radio1 = document.getElementById('radio1');
+				var radio2 = document.getElementById('radio2');
+				var txt = document.getElementById('Txt');
+				if(radio1.checked){
+					txt.disabled = '';
+				}else{
+					txt.disabled = "disabled";
+				}
+			}
+	</script>
+</head>
+<body>
+
+		<form>
+			<input type="radio" name="radio" id="radio1" onchange="check()">可选
+			<input type="radio" name="radio" id="radio2" onchange="check()">禁止
+			<input type="text" disabled id="Txt" disabled>
+		</form>
+</body>
+</html>
